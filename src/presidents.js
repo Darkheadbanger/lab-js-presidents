@@ -476,6 +476,6 @@ function countRepublicanPresidents(presidentsArr) {
 // Bonus: Iteration 8 | Sort Presidents by Name - `sort()`
 function sortPresidentsByName(presidentsArr) {
   return presidentsArr.sort((a, b) => {
-    return a.name - b.name;
+    return a.name.localeCompare(b.name);
   });
 }
